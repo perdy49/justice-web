@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100vh; /* Menetapkan tinggi header 100% dari tinggi viewport */
+    background-image: url('../foto/justice.jpg'); /* Menetapkan gambar sebagai latar belakang */
+    background-size: 100% auto; /* Mengatur ukuran gambar untuk menutupi seluruh lebar halaman */
+    background-position: center; /* Mengatur posisi gambar agar berada di tengah */
+    background-repeat: no-repeat; /* Mencegah gambar diulang di latar belakang */
+}
+
+.text h4{
+    font-size: 55px;
+    color: rgb(161, 163, 22);
+    position: absolute;
+    left: 3%;
+    top: 5%;
+}
+
+.text-awal1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 110%;
+    position: absolute;
+    left: 58%;
+    top: 10%;
+    text-align: center; /* Mengatur teks menjadi rata tengah */
+    display: block; /* Membuat setiap paragraf menjadi blok terpisah */
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards; /* Animasi fade-in dengan durasi 1 detik */
+    animation-delay: 2s; /* Menunda mulai animasi selama 3 detik */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.text-awal1:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.text-awal2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 140%;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+}
+
+.tombol {
+    background-color: rgba(18, 160, 77, 0.5); /* Warna latar belakang tombol dengan transparansi */
+    color: white; /* Warna teks */
+    border: none; /* Menghapus garis tepi */
+    padding: 15px 32px; /* Padding (jarak) atas/bawah dan kiri/kanan */
+    text-align: center; /* Pusatkan teks secara horizontal */
+    text-decoration: none; /* Hapus dekorasi teks */
+    display: inline-block; /* Mengatur elemen sebagai elemen inline block */
+    font-size: 16px; /* Ukuran teks */
+    margin: 150px 240px; /* Margin (jarak) atas/bawah dan kiri/kanan */
+    cursor: pointer; /* Ubah kursor saat mengarah ke tombol */
+    border-radius: 12px; /* Mengatur sudut bulat tombol */
+    position: absolute; /* Mengatur posisi tombol secara absolut */
+    bottom: 20px; /* Mengatur jarak tombol dari bawah */
+    right: 20px; /* Mengatur jarak tombol dari kanan */
+}
+
+.tombol:hover {
+    background-color: #121612; /* Warna latar belakang saat mouse di atas tombol */
+}
